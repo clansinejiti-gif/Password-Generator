@@ -1,0 +1,131 @@
+.error {
+    color: #ff6b6b;
+    background-color: rgba(255, 107, 107, 0.1);
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 12px;
+    font-size: 0.95rem;
+    display: none;
+    text-align: center;
+}
+
+/* Rest of your CSS remains the same */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: white;
+    box-sizing: border-box;
+}
+
+main {
+    background: rgb(21, 16, 37);
+    width: 350px;
+    max-width: 95%;
+    margin: 40px auto;
+    border-radius: 5px;
+    padding: 30px;
+}
+
+h1 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+span.green {
+    color: rgb(7, 241, 7);
+}
+
+p {
+    color: rgb(230, 229, 229);
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+}
+
+fieldset {
+    border-radius: 5px;
+    background-color: rgb(30, 22, 56);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 25px;
+    font-size: 0.95rem;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.num-select {
+    border: 3px solid rgb(30, 22, 56);
+    background-color: rgb(30, 22, 56);
+    padding: 10px 12px;
+    border-radius: 6px;
+    width: 140px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button {
+    background-color: rgb(8, 165, 8);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    flex: 1;
+    min-width: 160px;
+}
+
+.line {
+    border: 0.5px solid rgb(189, 189, 221);
+    margin: 35px 0;
+}
+
+.pass-div {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.pass-field {
+    border: 3px solid rgb(30, 22, 56);
+    background-color: rgb(30, 22, 56);
+    padding: 14px 12px;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    word-break: break-all;
+    font-size: 1.1rem;
+}
+
+.pass-field:hover {
+    background-color: rgb(40, 32, 66);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    main {
+        padding: 20px;
+        width: 100%;
+    }
+    
+    .controls {
+        flex-direction: row;
+    }
+    
+    .num-select {
+        flex: 1;
+        min-width: 110px;
+    }
+    
+    button {
+        flex: 2;
+    }
+}

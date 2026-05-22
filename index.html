@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <main>
+      <h1>Generate a <span class="green">random password</span></h1>
+      <p>Never use an insecure password again.</p>
+
+      <fieldset title="select how your password should look like">
+        <legend>Show Me:</legend>
+        <label><input type="checkbox" id="lowercase" checked /> Lower Case</label>
+        <label><input type="checkbox" id="uppercase" checked /> Upper Case</label>
+        <label><input type="checkbox" id="numbers" checked /> Numbers</label>
+        <label><input type="checkbox" id="symbols" checked /> Symbols</label>
+      </fieldset>
+
+      <div class="controls">
+        <input
+          class="num-select"
+          type="number"
+          id="numChoosen"
+          value="12"
+          min="8"
+          max="22"
+          placeholder="Length"
+        />
+        <button onclick="generatePass()">Generate passwords</button>
+      </div>
+
+      <div id="error-msg" class="error"></div>
+
+      <div class="line"></div>
+
+      <div class="pass-div" id="pass-div">
+        <span title="Click to copy" class="pass-field" id="pass1" onclick="copyText1()"></span>
+        <span title="Click to copy" class="pass-field" id="pass2" onclick="copyText2()"></span>
+      </div>
+    </main>
+
+    <script src="characters.js"></script>
+  </body>
+</html>
